@@ -1,3 +1,4 @@
+from xvfbwrapper import Xvfb
 import streamlit as st
 import openpyxl
 import pandas as pd
@@ -5,8 +6,11 @@ from openpyxl.utils.dataframe import dataframe_to_rows
 from openpyxl.styles import Font, PatternFill
 from datetime import datetime, timedelta
 import os
-
 import pyautogui
+
+# Start virtual display
+vdisplay = Xvfb()
+vdisplay.start()
 
 def process_excel_file(file_path, sheet_name, date_column='Date'):
     wb = openpyxl.load_workbook(file_path)
@@ -114,3 +118,5 @@ st.page_link("streamlit_app.py", label="Home Page",icon="🏠")
 st.page_link("pages/page1.py", label="Abandon Call & Combined Call volume Excel file process", icon="1️⃣")
 st.page_link("pages/page2.py", label="Call volume - Base Data - working", icon="2️⃣")
 st.page_link("pages/page3.py",label="Veronica & Curtis File - working", icon="3️⃣")
+
+vdisplay.stop()
