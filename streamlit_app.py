@@ -102,8 +102,8 @@ st.markdown("1. Page 1 - Process of Abandon Calls and Combined Calls filering.")
 st.markdown("2. Page 2 - Updating Base Data - working file with Previous week Data")
 st.markdown("3. Page 3 - Updating the Veronica & Curtis file")
 st.markdown("4. Once process is finish Press reset button to reset everything")
-if st.button("Reset"):
-    pyautogui.hotkey("ctrl","F5")
+# if st.button("Reset"):
+#     pyautogui.hotkey("ctrl","F5")
 
 # st.divider()
 # st.markdown(":blue-background[1. Filtering process for Abandon Calls and Call Volumes Combined]")
