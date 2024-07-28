@@ -114,4 +114,3 @@ st.page_link("pages/page1.py", label="Abandon Call & Combined Call volume Excel 
 st.page_link("pages/page2.py", label="Call volume - Base Data - working", icon="2️⃣")
 st.page_link("pages/page3.py",label="Veronica & Curtis File - working", icon="3️⃣")
 
-vdisplay.stop()
