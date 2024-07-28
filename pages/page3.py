@@ -8,7 +8,7 @@ import os
 import openpyxl
 from datetime import datetime
 
-import pyautogui
+
 
 def process_excel_file(file_path, sheet_name, date_column='Date'):
     wb = openpyxl.load_workbook(file_path)
