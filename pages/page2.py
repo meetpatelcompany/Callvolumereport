@@ -6,7 +6,7 @@ from openpyxl.styles import Font, PatternFill
 from datetime import datetime, timedelta
 import os
 
-import pyautogui
+
 
 def process_excel_file(file_path, sheet_name, date_column='Date'):
     wb = openpyxl.load_workbook(file_path)
